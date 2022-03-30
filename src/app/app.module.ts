@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {TableModule} from './table/table.module';
 import {AisFilterModule} from './ais-filter/ais-filter.module';
+import {NgAisSearchBoxModule, NgAisInstantSearchModule} from 'angular-instantsearch';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import {AisFilterModule} from './ais-filter/ais-filter.module';
   imports: [
     BrowserModule,
     TableModule,
-    AisFilterModule
+    NgAisInstantSearchModule,
+    AisFilterModule,
+    NgAisSearchBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

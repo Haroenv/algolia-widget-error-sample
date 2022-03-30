@@ -5,7 +5,7 @@ import {TableHeadComponent} from './table-head/table-head.component';
 import {TableBodyComponent} from './table-body/table-body.component';
 import {TableHeadItemComponent} from './table-head-item/table-head-item.component';
 import {TableBodyRowComponent} from './table-body-row/table-body-row.component';
-import {NgAisHitsModule, NgAisInstantSearchModule} from 'angular-instantsearch';
+import {NgAisHitsModule} from 'angular-instantsearch';
 
 
 @NgModule({
@@ -25,7 +25,6 @@ import {NgAisHitsModule, NgAisInstantSearchModule} from 'angular-instantsearch';
   ],
   imports: [
     CommonModule,
-    NgAisInstantSearchModule,
     NgAisHitsModule
   ]
 })

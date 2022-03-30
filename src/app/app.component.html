@@ -1,5 +1,7 @@
-<app-table [AisConfig]="AisConfig" [TableConfig]="TableConfig">
-<!--  <app-ais-search-box headerDataFilter></app-ais-search-box>   Uncomment this line the get an error -->
+<ais-instantsearch [config]="AisConfig">
+
+<app-table [TableConfig]="TableConfig">
+  <app-ais-search-box headerDataFilter></app-ais-search-box> 
 
   <thead tableHead>
     <th tableHeadItem>0</th>
@@ -19,3 +21,5 @@
     </ng-template>
   </tbody>
 </app-table>
+
+</ais-instantsearch>
