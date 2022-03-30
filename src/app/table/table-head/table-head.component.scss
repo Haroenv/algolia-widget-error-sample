@@ -1,0 +1,42 @@
+tr {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  display: block;
+  white-space: nowrap;
+
+  ::ng-deep {
+    th {
+      vertical-align: middle;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    th {
+      white-space: nowrap;
+      border: 0;
+      font-weight: 600;
+      font-size: .8rem;
+      padding: 0 5px;
+      display: inline-block;
+    }
+
+    @media (min-width: 768px) {
+      th {
+        display: table-cell;
+        padding: 16px 10px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  tr {
+    display: table-row;
+    position: static;
+    top: auto;
+    left: auto;
+    white-space: normal;
+  }
+}

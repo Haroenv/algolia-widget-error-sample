@@ -1,0 +1,6 @@
+<input
+  type="text"
+  #input
+  (keyup)="state.refine(input.value)"
+  [value]="state?.query ?? null"
+/>

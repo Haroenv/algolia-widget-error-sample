@@ -1,0 +1,23 @@
+<ais-instantsearch [config]="AisConfig">
+
+  <div class="table-box" style="max-width: 750px">
+    <div *ngIf="TableConfig?.header" class="title-small">
+      <h2 *ngIf="TableConfig.header?.title as title" class="title-bold">{{ title }}</h2>
+      <p *ngIf="TableConfig.header?.description as description" class="title-text">{{ description }}</p>
+      <ng-content select="[headerDataFilter]"></ng-content>
+    </div>
+
+    <ais-hits>
+      <ng-template let-hits="hits" let-results="results">
+        <table class="table">
+
+          <ng-container [ngTemplateOutlet]="templ" [ngTemplateOutletContext]="{hits: hits, results: results}"></ng-container>
+          <ng-content></ng-content>
+
+        </table>
+      </ng-template>
+    </ais-hits>
+  </div>
+
+
+</ais-instantsearch>
